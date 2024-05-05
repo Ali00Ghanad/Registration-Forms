@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-body">
+        <div class="user-details">
+            <form novalidate>
+                <fieldset class="header">
+                    <h1>Registration Form</h1>
+                    <p style="color: grey;">fill the empty fields to access your account.</p>
+                </fieldset>
+                <hr>
+                <fieldset class="main">
+                    <label for="username"><i class="fa fa-user"></i> UserName  <input type="text" name="username" class="user-input" required></label>
+                    <label for="password"><i class="fa fa-lock"></i> Password  <input type="password" id="password-input" name="password" class="user-input" required></label>
+                    <label for="r-password"><i class="fa fa-lock"></i> Repeat Password  <input type="password" id="repeated-password" class="user-input" name="r-password" required></label>
+                    <label for="email"><i class="fa fa-envelope"></i> Email  <input type="email" class="user-input" name="email" id="email-input"  required></label>
+                    <div class="form-errors">
+                        <p id="match-password">* Passwords don't match !</p>
+                        <p id="empty-fields">* Fill the empty fields !</p>
+                        <p id="email-error">* Email is not correct !</p>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="gender-option"><input type="radio" name="gender-option" class="middle" checked> Male</label>
+                    <label for="gender-option"><input type="radio" name="gender-option" class="middle" > Female</label>
+                    <input type="submit" value="Continue" id="submit-btn">
+                    <label for="checkbox" class="middle"><input type="checkbox" name="remember" class="middle remember"> Remember me</label>
+                </fieldset>
+                <hr>
+                <fieldset class="footer">
+                    <p style="font-size: 12px;">by joining, you agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p><br>
+                    <div class="btns">
+                        <button onclick="alert('it works')"><i class="fa fa-twitter"></i></button> 
+                        <button onclick="alert('it works')"><i class="fa fa-instagram"></i></button> 
+                        <button onclick="alert('it works')"><i class="fa fa-telegram"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="img">
+            <div class="box">
+                <a href="#">Back To Home</a>
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                <a href="#">Login</a>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="congrats">THANK YOU !</h1>
+    <script src="script.js"></script>
+</body>
+</html>
